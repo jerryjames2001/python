@@ -7,8 +7,8 @@ class rectangle:
     def perimeter(self):
         self.p=4 * (self.x + self.y)
     def disp(self):
-        print("Area=", self.a)
-        print("Perimeter=", self.p)
+        print("Area=",self.a)
+        print("Perimeter=",self.p)
 
 l1=int(input("Enter the length of rectangle 1"))
 b1=int(input("Enter the breadth of rectangle 1"))
@@ -18,5 +18,9 @@ b2=int(input("Enter the breadth of rectangle 2"))
 
 obj1=rectangle(l1,b1)
 obj2=rectangle(l2,b2)
+obj1.area()
+obj1.perimeter()
+obj2.area()
+obj2.perimeter()
 obj1.disp()
 obj2.disp()
