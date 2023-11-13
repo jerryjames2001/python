@@ -13,6 +13,7 @@ class bank:
         self.balance+=d
     def withdraww(self,w):
         if self.balance > w:
+            print("Balance: ",self.balance)
             self.balance-=w
         else:
             print("The withdrawal amount is greater than balance")
@@ -28,4 +29,3 @@ obj.deposit(dep1)
 obj.display()
 wid=int(input("Enter the withdrawal amount"))
 obj.withdraww(wid)
-obj.display()
