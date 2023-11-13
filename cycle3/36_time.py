@@ -7,12 +7,12 @@ class time:
         sum_h=self.h + x.h
         sum_m=self.m + x.m
         sum_s=self.s + x.s
-        if sum_s >= 60:
+        if sum_s > 60:
             sum_s-=60
-            sum_m +1
-        if sum_m >=60:
+            sum_m=sum_m + 1
+        if sum_m >60:
             sum_m-=60
-            sum_h +1
+            sum_h=sum_h +1
         print("Sum time=",sum_h," : ",sum_m," : ",sum_s)
 
 print("Time1:")
@@ -26,5 +26,5 @@ h2=int(input("Enter the hour"))
 m2=int(input("Enter minutes"))
 s2=int(input("Enter seconds"))
 obj2=time(h2,m2,s2)
-print("Sum of times are ==:")
+print("Sum of times are :")
 obj1+obj2
