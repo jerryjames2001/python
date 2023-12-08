@@ -1,0 +1,3 @@
+Hi
+Python is Simple and powerfull programming language.
+Object Oriented
